@@ -1,2 +1,6 @@
-package com.kai.utils.ttlMap;public class TtlRemovalListener {
+package com.kai.utils.ttlMap;
+
+@FunctionalInterface
+public interface TtlRemovalListener<K, V> {
+    void onRemoval(K key, V v);
 }
